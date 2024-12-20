@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Incentive Management System</title>
+
+        <!-- Montserrat  Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="grid-container" href="css/styles.css">
+
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-right">
+                    <h1>INCENTIVE MANAGEMENT SYSTEM</h1>
+                </div>
+            </header>
+            <!-- End Header -->
+            
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <span class="material-icons-outlined">inventory</span> IncentiPro
+                    </div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="index.html" >
+                            <span class="material-icons-outlined">dashboard</span> Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="employees.html" >
+                            <span class="material-icons-outlined">person</span> Employees
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="package.html" >
+                            <span class="material-icons-outlined">redeem</span> Package
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Main -->
+            <main class="main-container">
+                <div class="main-title">
+                    <p class="font-weight-bold">DASHBOARD</p>
+                </div>
+                <div class="main-cards">
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">EMPLOYEE</p>
+                            <span class="material-icons-outlined text-blue">person</span>
+                        </div>
+                        <span class="text-primary font-weight-bold"></span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">HOLIDAY PACKAGE</p>
+                            <span class="material-icons-outlined text-orange">redeem</span>
+                        </div>
+                        <span class="text-primary font-weight-bold"></span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">TOTAL PERFORMANCE</p>
+                            <span class="material-icons-outlined text-green">trending_up</span>
+                        </div>
+                        <span class="text-primary font-weight-bold"></span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">REWARDED EMPLOYEE</p>
+                            <span class="material-icons-outlined text-red">stars</span>
+                        </div>
+                        <span class="text-primary font-weight-bold"></span>
+                    </div>
+                </div>    
+
+               <div class="charts">
+
+                    <div class="charts-card">
+                        <p class="chart-title">Analysis of Each Employee</p>
+                        <div id="bar-chart"></div>
+                    </div>
+
+                    <div class="charts-card">
+                        <p class="chart-title">Performance of Employee</p>
+                        <div id="pie-chart"></div>
+                    </div>
+
+               </div>
+            </main>
+            <!-- End Main -->
+        </div>
+
+        <!-- Scripts -->
+        <!-- ApexCharts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
